@@ -15,8 +15,8 @@ limit 20;
 		-- Esta query permite consultar os itens cadastrados em determinada categoria de negócio.
 select
 		p.product_id,
-		t.product_category_name as Nome_Produto_Pt,
-		t.product_category_name_english as Nome_Produto_En
+		t.product_category_name as Categoria_Pt,
+		t.product_category_name_english as Categoria_En
 from olist_products_dataset p
 inner join product_category_name_translation t
 		on p.product_category_name = t.product_category_name
